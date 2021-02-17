@@ -4,27 +4,27 @@ import pygame as pg
 def create_fruit(type, x, y):
     fruit = None
     if type == 1:
-        fruit = PT(x, y)
+        fruit = Grape(x, y)
     elif type == 2:
-        fruit = YT(x, y)
+        fruit = Cherry(x, y)
     elif type == 3:
-        fruit = JZ(x, y)
+        fruit = Mandarine(x, y)
     elif type == 4:
-        fruit = NM(x, y)
+        fruit = Lemon(x, y)
     elif type == 5:
-        fruit = MHT(x, y)
+        fruit = Kiwi(x, y)
     elif type == 6:
-        fruit = XHS(x, y)
+        fruit = Tomato(x, y)
     elif type == 7:
-        fruit = TZ(x, y)
+        fruit = Peach(x, y)
     elif type == 8:
-        fruit = BL(x, y)
+        fruit = Pineapple(x, y)
     elif type == 9:
-        fruit = YZ(x, y)
+        fruit = Coconut(x, y)
     elif type == 10:
-        fruit = XG(x, y)
+        fruit = Watermelon(x, y)
     elif type == 11:
-        fruit = DXG(x, y)
+        fruit = BigWatermelon(x, y)
     return fruit
 
 
@@ -50,7 +50,7 @@ class Fruit():
         surface.blit(self.image, self.rect)
 
 
-class PT(Fruit):
+class Grape(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 10
         self.type = 1
@@ -62,7 +62,7 @@ class PT(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class YT(Fruit):
+class Cherry(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 15
         self.type = 2
@@ -74,7 +74,7 @@ class YT(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class JZ(Fruit):
+class Mandarine(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 21
         self.type = 3
@@ -86,7 +86,7 @@ class JZ(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class NM(Fruit):
+class Lemon(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 23
         self.type = 4
@@ -98,7 +98,7 @@ class NM(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class MHT(Fruit):
+class Kiwi(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 29
         self.type = 5
@@ -110,7 +110,7 @@ class MHT(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class XHS(Fruit):
+class Tomato(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 35
         self.type = 6
@@ -122,7 +122,7 @@ class XHS(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class TZ(Fruit):
+class Peach(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 37
         self.type = 7
@@ -134,7 +134,7 @@ class TZ(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class BL(Fruit):
+class Pineapple(Fruit):
     def __init__(self, x, y):
         self.r = 2 * 50
         self.type = 8
@@ -146,7 +146,7 @@ class BL(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class YZ(Fruit):
+class Coconut(Fruit):
 
     def __init__(self, x, y):
         self.r = 2 * 59
@@ -159,7 +159,7 @@ class YZ(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class XG(Fruit):
+class Watermelon(Fruit):
 
     def __init__(self, x, y):
         self.r = 2 * 60
@@ -172,7 +172,7 @@ class XG(Fruit):
         self.image = pg.transform.smoothscale(self.image, self.size)
 
 
-class DXG(Fruit):
+class BigWatermelon(Fruit):
 
     def __init__(self, x, y):
         self.r = 2 * 78
